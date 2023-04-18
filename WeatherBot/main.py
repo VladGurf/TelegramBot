@@ -98,7 +98,7 @@ async def truth(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
 
     await context.bot.send_message(chat_id=update.effective_chat.id, text=random.choice(TRUTH_TO_TELL))
-    global_nose.to_grow()
+    global_nose.to_shrink()
 
 async def lie(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
@@ -112,7 +112,7 @@ async def lie(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
 
     await context.bot.send_message(chat_id=update.effective_chat.id, text=random.choice(LIE_TO_TELL))
-    global_nose.to_shrink()
+    global_nose.to_grow()
 
 async def nose(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """
